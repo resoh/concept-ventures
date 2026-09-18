@@ -6,6 +6,10 @@
   --oak-light: #d99a5f;
   --steel: #4f93ab;
   --steel-light: #7ab6c9;
+  --teal: #4a9d84;
+  --teal-light: #7ec2a9;
+  --rust: #c1652e;
+  --rust-light: #dd8a57;
   --cream: #f1f0ee;
   --cream-dim: #cfccc7;
 }
@@ -31,7 +35,7 @@ h1, h2 {
 
 /* Concept banner */
 .concept-banner {
-  background: linear-gradient(90deg, var(--oak), var(--steel));
+  background: linear-gradient(90deg, var(--oak), var(--steel), var(--teal), var(--rust));
   color: var(--charcoal);
   text-align: center;
   font-weight: 700;
@@ -49,7 +53,7 @@ main {
 }
 
 .hub-content {
-  max-width: 1000px;
+  max-width: 1240px;
   text-align: center;
 }
 
@@ -77,7 +81,7 @@ h1 {
 
 .venture-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -96,6 +100,8 @@ h1 {
 
 .venture-oak:hover { border-color: var(--oak); }
 .venture-steel:hover { border-color: var(--steel); }
+.venture-teal:hover { border-color: var(--teal); }
+.venture-rust:hover { border-color: var(--rust); }
 
 .venture-tag {
   text-transform: uppercase;
@@ -106,6 +112,8 @@ h1 {
 }
 .venture-oak .venture-tag { color: var(--oak-light); }
 .venture-steel .venture-tag { color: var(--steel-light); }
+.venture-teal .venture-tag { color: var(--teal-light); }
+.venture-rust .venture-tag { color: var(--rust-light); }
 
 .venture-card h2 { font-size: 1.8rem; margin-bottom: 14px; }
 
@@ -121,6 +129,8 @@ h1 {
 }
 .venture-oak .venture-cta { color: var(--oak-light); }
 .venture-steel .venture-cta { color: var(--steel-light); }
+.venture-teal .venture-cta { color: var(--teal-light); }
+.venture-rust .venture-cta { color: var(--rust-light); }
 
 .footer {
   text-align: center;
@@ -131,6 +141,10 @@ h1 {
 }
 .footer-sub { font-size: 0.78rem; opacity: 0.7; margin-top: 4px; }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .venture-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
   .venture-grid { grid-template-columns: 1fr; }
 }
