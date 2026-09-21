@@ -1,6 +1,6 @@
 # Concept Ventures — Directory & Repo Layout
 
-> This file documents how this directory is organized and version-controlled. It is project context for working in this repo, not business content — for the venture playbooks themselves, see each venture's own `claude.md`.
+> This file documents how this directory is organized and version-controlled. It is project context for working in this repo, not business content — for the venture playbooks themselves, see each venture's own `CLAUDE.md`.
 
 ## What this directory is
 
@@ -34,6 +34,6 @@ This directory itself (`concept-ventures/`) is also its own git repo: [`resoh/co
 
 ## Working conventions
 
-- All four venture concepts are **drafts** — each venture's `claude.md` playbook says so explicitly ("Status: Concept draft"). Treat specific numbers/mechanisms as illustrative, not final, unless told otherwise.
+- All four venture concepts are **drafts** — each venture's `CLAUDE.md` playbook says so explicitly ("Status: Concept draft"). Treat specific numbers/mechanisms as illustrative, not final, unless told otherwise.
 - When a partner/stakeholder raises a concern that changes a playbook or site, log it in `decision-log.md` (see "How to use this log" at the bottom of that file) in addition to making the change.
 - Cross-venture consistency matters: a fix driven by a concern about one venture (e.g. the powder-coat wear-point fix) is usually meant to apply to all four — check `decision-log.md`'s "Ventures Affected" column before scoping a fix to just one.

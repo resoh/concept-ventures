@@ -1,6 +1,6 @@
 # Concept Ventures — Pitch Hub
 
-Core/hub project for four related storage-installation business concepts. Each venture is a self-contained subfolder here (own `README.md`, `claude.md` playbook, `index.html` pitch site, `styles.css`), tied together by this hub's landing page, `decision-log.md`, `automate.md`, and `iron-oak-project-plan.md`.
+Core/hub project for four related storage-installation business concepts. Each venture is a self-contained subfolder here (own `README.md`, `CLAUDE.md` playbook, `index.html` pitch site, `styles.css`), tied together by this hub's landing page, `decision-log.md`, `automate.md`, and `iron-oak-project-plan.md`.
 
 - [`ironOak/`](ironOak/) — [Iron & Oak Closets](https://resoh.github.io/iron-oak-closets/) — modular closet installations
 - [`stockroom-standard/`](stockroom-standard/) — [Stockroom Standard](https://resoh.github.io/stockroom-standard/) — modular pantry storage
