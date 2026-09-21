@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+
+# Each venture below has its own GitHub repo — excluded here to avoid nested/embedded repos.
+/ironOak/
+/stockroom-standard/
+/the-utility-line/
+/bay-and-bolt/

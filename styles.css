@@ -1,0 +1,150 @@
+:root {
+  --charcoal: #17181a;
+  --charcoal-light: #212326;
+  --iron: #3a3d40;
+  --oak: #b8763f;
+  --oak-light: #d99a5f;
+  --steel: #4f93ab;
+  --steel-light: #7ab6c9;
+  --teal: #4a9d84;
+  --teal-light: #7ec2a9;
+  --rust: #c1652e;
+  --rust-light: #dd8a57;
+  --cream: #f1f0ee;
+  --cream-dim: #cfccc7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--charcoal);
+  color: var(--cream);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-family: 'Bebas Neue', 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* Concept banner */
+.concept-banner {
+  background: linear-gradient(90deg, var(--oak), var(--steel), var(--teal), var(--rust));
+  color: var(--charcoal);
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  padding: 10px 16px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6vw 6vw;
+}
+
+.hub-content {
+  max-width: 1240px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5.5vw, 3.4rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.subhead {
+  font-size: 1.05rem;
+  color: var(--cream-dim);
+  max-width: 650px;
+  margin: 0 auto 48px;
+}
+
+.venture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.venture-card {
+  display: block;
+  text-align: left;
+  background: var(--charcoal-light);
+  border: 1px solid var(--iron);
+  border-radius: 12px;
+  padding: 32px;
+  text-decoration: none;
+  color: var(--cream);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.venture-card:hover { transform: translateY(-4px); }
+
+.venture-oak:hover { border-color: var(--oak); }
+.venture-steel:hover { border-color: var(--steel); }
+.venture-teal:hover { border-color: var(--teal); }
+.venture-rust:hover { border-color: var(--rust); }
+
+.venture-tag {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.venture-oak .venture-tag { color: var(--oak-light); }
+.venture-steel .venture-tag { color: var(--steel-light); }
+.venture-teal .venture-tag { color: var(--teal-light); }
+.venture-rust .venture-tag { color: var(--rust-light); }
+
+.venture-card h2 { font-size: 1.8rem; margin-bottom: 14px; }
+
+.venture-desc {
+  color: var(--cream-dim);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+}
+
+.venture-cta {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.venture-oak .venture-cta { color: var(--oak-light); }
+.venture-steel .venture-cta { color: var(--steel-light); }
+.venture-teal .venture-cta { color: var(--teal-light); }
+.venture-rust .venture-cta { color: var(--rust-light); }
+
+.footer {
+  text-align: center;
+  padding: 32px 6vw;
+  border-top: 1px solid var(--iron);
+  color: var(--cream-dim);
+  font-size: 0.85rem;
+}
+.footer-sub { font-size: 0.78rem; opacity: 0.7; margin-top: 4px; }
+
+@media (max-width: 900px) {
+  .venture-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .venture-grid { grid-template-columns: 1fr; }
+}
