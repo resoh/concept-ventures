@@ -7,6 +7,8 @@ Core/hub project for four related storage-installation business concepts. Each v
 - [`the-utility-line/`](the-utility-line/) — [The Utility Line](https://resoh.github.io/the-utility-line/) — modular laundry room installations
 - [`bay-and-bolt/`](bay-and-bolt/) — [Bay & Bolt](https://resoh.github.io/bay-and-bolt/) — modular garage storage
 
+Each venture folder has its own GitHub repo (excluded from this repo via `.gitignore`) so it can be developed and deployed independently.
+
 ## Viewing
 
 Live at GitHub Pages once enabled, or open `index.html` directly in a browser.
